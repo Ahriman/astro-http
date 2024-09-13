@@ -13,5 +13,10 @@ export default defineConfig({
   site: 'https://example.com',
   integrations: [mdx(), sitemap(), db()],
   output: "hybrid",
-  adapter: cloudflare()
+  adapter: cloudflare(),
+  vite: {
+    ssr: {
+      noExternal: ['@astrojs/db']
+    }
+  }
 });
