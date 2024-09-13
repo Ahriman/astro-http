@@ -14,16 +14,12 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), db()],
   output: "hybrid",
   adapter: cloudflare(),
-  vite: {
-    build: {
-      rollupOptions: {
-        external: ['astro:db'],
-        output: {
-          globals: {
-            'astro:db': 'AstroDB'
-          }
-        }
-      }
+  build: {
+    rollupOptions: {
+      external: ['node:fs']
     }
+  },
+  ssr: {
+    noExternal: ['@astrojs/db']
   }
 });
