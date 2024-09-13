@@ -13,13 +13,5 @@ export default defineConfig({
   site: 'https://example.com',
   integrations: [mdx(), sitemap(), db()],
   output: "hybrid",
-  adapter: cloudflare(),
-  build: {
-    rollupOptions: {
-      external: ['node:fs']
-    }
-  },
-  ssr: {
-    noExternal: ['@astrojs/db']
-  }
+  adapter: cloudflare()
 });
