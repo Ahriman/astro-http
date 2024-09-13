@@ -1,0 +1,16 @@
+{
+  "aastro": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "aastro",
+    "body": [
+      "import type { APIRoute } from \"astro\";",
+      "",
+      "export const GET: APIRoute = async ({ params, request}) => {",
+      "",
+      "",
+      "",
+      "    return new Response( 'Ok!', { status: 200 });",
+      "};"
+    ]
+  }
+}
