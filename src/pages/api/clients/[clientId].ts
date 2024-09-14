@@ -8,11 +8,9 @@ export const GET: APIRoute = async ({ params, request }) => {
 
     const clientId = params.clientId ?? '';
 
-    // const { id, ...body } = await request.json();
-
     const clients = await db.select().from(Clients).where(eq(Clients.id, +clientId));
 
-    console.log(clients);
+    // console.log(clients);
 
     if ( clients.length === 0) {
         return new Response( JSON.stringify({ msg: `Client with id ${clientId} not found` }), { 
@@ -85,8 +83,6 @@ export const POST: APIRoute = async ({ params, request }) => {
         });
     };
 };
-
-
 
 export const DELETE: APIRoute = async ({ params, request }) => {
 
