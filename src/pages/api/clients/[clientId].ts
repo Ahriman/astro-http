@@ -1,4 +1,3 @@
-import { cli } from "@astrojs/db";
 import type { APIRoute } from "astro";
 import { db, eq, Clients } from "astro:db";
 
