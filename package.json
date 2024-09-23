@@ -19,10 +19,16 @@
     "@astrojs/mdx": "3.1.6",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/vue": "^4.5.1",
     "astro": "^4.15.5",
-    "typescript": "^5.6.2"
+    "canvas-confetti": "^1.9.3",
+    "lodash.debounce": "^4.0.8",
+    "typescript": "^5.6.2",
+    "vue": "^3.5.8"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.6.4",
+    "@types/lodash.debounce": "^4.0.9",
     "vite": "^5.4.5"
   }
 }
